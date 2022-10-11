@@ -4,7 +4,83 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="assets/styles/style.css" />
+
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1>Avalie a sua mentoria</h1>
+
+      <h2>Chegoua a hora de avaliar o seu mentor. Bora lá?</h2>
+
+      <img
+        src="assets/images/img1.png"
+        alt="Imagem do nível de avaliação medido por estrelas de um a cinco."
+      />
+    </header>
+
+    <form id="my-form" action="">
+      <fieldset>
+        <legend>Informações pessoais</legend>
+
+        <div class="input-wrapper">
+          <label for="name">Nome</label>
+          <input type="text" name="" id="name" />
+
+          <label for="last-name">Sobrenome</label>
+          <input type="text" name="last-name" id="last-name" />
+        </div>
+
+        <div class="input-wrapper">
+          <label for="email"
+            >E-mail <span>(digite um e-mail válido)</span></label
+          >
+          <input type="email" name="email" id="email" />
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Informações do mentor</legend>
+
+        <div class="input-wrapper">
+          <label for="mentor">Selecione quem foi seu mentor</label>
+          <input type="text" name="mentor" id="mentor" />
+        </div>
+
+        <div class="input-wrapper">
+          <label for="feedback">Feedback sobre o mentor</label>
+          <textarea name="feedback" id="feedback"></textarea>
+        </div>
+
+        <div class="input-wrapper">
+          <input type="checkbox" name="satisfactory" id="satisfactory" />
+          <label for="satisfactory"
+            >Todas as minhas dúvidas foram esclarecidas durante a
+            mentoria.</label
+          >
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Agendando próxima semana</legend>
+
+        <div class="input-wrapper">
+          <label for="date">Data <span>(DD/MM/AAAA)</span></label>
+          <input type="date" name="date" id="date" />
+        </div>
+
+        <div class="input-wrapper">
+          <label for="start">Das</label>
+          <input type="time" name="start" id="start" />
+
+          <label for="end">Até</label>
+          <input type="time" name="end" id="end" />
+        </div>
+      </fieldset>
+
+      <button type="submit">Salvar</button>
+    </form>
+  </body>
 </html>
