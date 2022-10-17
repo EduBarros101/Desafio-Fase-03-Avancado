@@ -5,6 +5,7 @@
 }
 
 body {
+  font-family: "Poppins", sans-serif;
   background-color: #bfd7e4;
 }
 body::before {
@@ -17,9 +18,73 @@ body::before {
   background-color: #293241;
   z-index: -1;
 }
-body header {
+
+header {
   text-align: center;
+  width: 750px;
+  height: 332px;
+  margin: auto;
+  padding: 107px 0 32px;
 }
-body header img {
+header h1 {
+  font-family: "Staatliches";
+  font-size: 36px;
+  line-height: 45px;
+  color: #ffffff;
+}
+header h2 {
+  font-family: "Poppins";
+  font-size: 16px;
+  line-height: 24px;
+  height: 40px;
+  color: #ffffff;
+}
+header img {
   width: 225px;
+  margin-top: 2px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 750px;
+  margin: auto;
+  padding: 64px;
+  background: #ffffff;
+  border-radius: 20px;
+}
+form .input-wrapper {
+  display: flex;
+}
+form fieldset {
+  border: none;
+}
+form fieldset legend {
+  font-family: "Staatliches";
+  font-size: 24px;
+  width: 100%;
+  text-align: center;
+  line-height: 34px;
+}
+form label {
+  font-size: 14px;
+  line-height: 24px;
+  color: #4e4958;
+}
+form input {
+  background: #fafafc;
+  border: 1px solid #e6e6f0;
+  border-radius: 8px;
+}
+form textarea {
+  width: 100%;
+  height: 165px;
+  background: #fafafc;
+  border: 1px solid #e6e6f0;
+  border-radius: 8px;
+}
+form #field-personal-info legend {
+  width: 100%;
+  background: #f67669;
+  color: #ffffff;
 }/*# sourceMappingURL=style.css.map */
