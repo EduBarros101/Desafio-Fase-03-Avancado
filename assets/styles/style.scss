@@ -64,6 +64,15 @@ form {
     flex-direction: column;
   }
 
+  .full-name {
+    display: flex;
+    gap: 22px;
+
+    .input-wrapper {
+      width: 100%;
+    }
+  }
+
   .checkbox-wrapper {
     flex-direction: row;
   }
@@ -89,8 +98,8 @@ form {
   }
 
   input {
+    height: 55px;
     background: #fafafc;
-
     border: 1px solid #e6e6f0;
     border-radius: 8px;
   }

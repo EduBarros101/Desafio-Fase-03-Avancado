@@ -57,6 +57,13 @@ form .input-wrapper {
   display: flex;
   flex-direction: column;
 }
+form .full-name {
+  display: flex;
+  gap: 22px;
+}
+form .full-name .input-wrapper {
+  width: 100%;
+}
 form .checkbox-wrapper {
   flex-direction: row;
 }
@@ -76,6 +83,7 @@ form label {
   color: #4e4958;
 }
 form input {
+  height: 55px;
   background: #fafafc;
   border: 1px solid #e6e6f0;
   border-radius: 8px;
