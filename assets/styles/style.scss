@@ -55,9 +55,12 @@ form {
 
   width: 750px;
   margin: auto;
-  padding: 64px;
   background: #ffffff;
   border-radius: 20px;
+
+  .fieldset-padding {
+    padding: 30px 64px 64px;
+  }
 
   .input-wrapper {
     display: flex;
@@ -75,6 +78,18 @@ form {
 
   .checkbox-wrapper {
     flex-direction: row;
+  }
+
+  #field-personal-info {
+    legend {
+      // FIXME: conferir a estilização deste campo.
+
+      width: 100%;
+      height: 133px;
+      background: #f67669;
+      color: #ffffff;
+      border-radius: 20px 20px 0 0;
+    }
   }
 
   fieldset {
@@ -114,13 +129,7 @@ form {
     border-radius: 8px;
   }
 
-  #field-personal-info {
-    legend {
-      // FIXME: conferir a estilização deste campo.
-
-      width: 100%;
-      background: #f67669;
-      color: #ffffff;
-    }
+  button {
+    width: 100%;
   }
 }
